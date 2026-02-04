@@ -17,7 +17,7 @@ const Reports = () => {
   const [monthFilter, setMonthFilter] = useState("All");
   const [statusFilter, setStatusFilter] = useState("All");
 
-  const data: ReportItem[] = reports;
+  const data = reports as ReportItem[];
 
   const months = Array.from(new Set(data.map((r) => r.month)));
 
