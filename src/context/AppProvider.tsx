@@ -1,9 +1,9 @@
 import {  useReducer, useEffect } from 'react';
 import type { ReactNode } from 'react';
 import { ThemeContext } from './ThemeContext';
-import { themeReducer, type ThemeAction, type ThemeState } from './ThemeReducer';
+import { themeReducer } from './ThemeReducer';
 import { AuthContext, type User } from './AuthContext';
-import { authReducer, type AuthAction, type AuthState } from './AuthReducer';
+import { authReducer } from './AuthReducer';
 
 const THEME_STORAGE_KEY = 'theme';
 const AUTH_STORAGE_KEY = 'auth_user';
