@@ -8,14 +8,8 @@ import BarChartIcon from '@mui/icons-material/BarChart';
 
 const Header = () => {
   return (
-<<<<<<< HEAD
-    <>
-      <div className="header-sticky">
-        <Navbar />
-=======
     <header className="header-stack">
       <Navbar />
->>>>>>> 8b1d2bb (full react  project complete)
 
         <div className="sub-navbar">
           <div className="sub-navbar-inner">
@@ -35,7 +29,6 @@ const Header = () => {
             </NavLink>
           </div>
         </div>
-      </div>
     </header>
   );
 };

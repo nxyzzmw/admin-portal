@@ -107,21 +107,12 @@ body[data-theme='dark'] .chart-card {
   border-color: #1e293b;
 }
 
-<<<<<<< HEAD
 @media (max-width: 768px) {
   .bar-grid {
     grid-auto-flow: column;
     grid-auto-columns: minmax(60px, 1fr);
-    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
     overflow-x: auto;
     overscroll-behavior-x: contain;
-    padding-bottom: 6px;
-=======
-@media (max-width: 640px) {
-  .bar-grid {
-    grid-auto-flow: column;
-    grid-auto-columns: minmax(48px, 1fr);
-    overflow-x: auto;
     gap: 10px;
     padding-bottom: 8px;
     -webkit-overflow-scrolling: touch;
@@ -130,6 +121,5 @@ body[data-theme='dark'] .chart-card {
 
   .bar-grid::-webkit-scrollbar {
     display: none;
->>>>>>> 8b1d2bb (full react  project complete)
   }
 }
