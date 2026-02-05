@@ -5,6 +5,8 @@ import { useEffect, useState } from "react";
 import { useTheme } from "../../context/ThemeContext";
 import { useAuth } from "../../context/AuthContext";
 import "./navbar.css";
+
+const logoUrl = `${import.meta.env.BASE_URL}vite.svg`;
 const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
   const { logout, user, updateUser } = useAuth();
@@ -59,9 +61,9 @@ const Navbar = () => {
     <nav className="top-navbar">
       <div className="top-navbar-inner">
         {/* Left */}
-        <div className="brand">
+          <div className="brand">
           <div className="brand-icon">
-            <img src="/vite.svg" alt="Logo" />
+            <img src={logoUrl} alt="Logo" />
           </div>
           <span className="brand-text">ADMIN PORTAL</span>
         </div>

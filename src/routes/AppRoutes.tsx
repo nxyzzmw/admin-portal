@@ -12,16 +12,17 @@ const AppRoutes = () => {
   return (
     <Routes>
       {/* Public */}
+      <Route path="/" element={<Login />} />
       <Route path="/login" element={<Login />} />
 
       {/* Protected */}
       <Route element={<ProtectedRoute />}>
         <Route element={<Layout />}>
-          <Route index element={<Navigate to="/dashboard" />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/reports" element={<Reports />} />
-          <Route path="/users" element={<Users />} />
-          <Route path="/profile" element={<Profile />} />
+          <Route index element={<Navigate to="dashboard" replace />} />
+          <Route path="dashboard" element={<Dashboard />} />
+          <Route path="reports" element={<Reports />} />
+          <Route path="users" element={<Users />} />
+          <Route path="profile" element={<Profile />} />
         </Route>
       </Route>
     </Routes>

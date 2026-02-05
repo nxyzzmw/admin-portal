@@ -8,6 +8,8 @@ import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
 import './login.css';
 
+const logoUrl = `${import.meta.env.BASE_URL}vite.svg`;
+
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -41,7 +43,7 @@ const Login = () => {
     <div className="login-page">
       <div className="login-header">
         <div className="login-brand">
-          <img className="login-logo" src="/vite.svg" alt="Logo" />
+          <img className="login-logo" src={logoUrl} alt="Logo" />
           <span className="login-brand-text">ADMIN PORTAL</span>
         </div>
         <button

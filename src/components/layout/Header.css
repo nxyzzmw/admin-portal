@@ -3,11 +3,19 @@ a {
   text-decoration: none;
 }
 
+<<<<<<< HEAD
 /* Sticky wrapper (all views) */
 .header-sticky {
   position: sticky;
   top: 0;
   z-index: 1200;
+=======
+/* STICKY HEADER STACK */
+.header-stack {
+  position: sticky;
+  top: 0;
+  z-index: 1100;
+>>>>>>> 8b1d2bb (full react  project complete)
 }
 
 /* TOP NAVBAR */
@@ -15,9 +23,13 @@ a {
   background: linear-gradient(180deg, #0f172a, #020617);
   padding: 6px 16px;
   color: #fff;
+<<<<<<< HEAD
   position: static;
   top: auto;
   z-index: 1100;
+=======
+  position: relative;
+>>>>>>> 8b1d2bb (full react  project complete)
 }
 
 .top-navbar-inner {
@@ -79,10 +91,14 @@ a {
 .sub-navbar {
   background: #0b1220;
   border-top: 1px solid #1e293b;
+<<<<<<< HEAD
   position: static;
   top: auto;
   z-index: 1090;
  
+=======
+  position: relative;
+>>>>>>> 8b1d2bb (full react  project complete)
 }
 
 .sub-navbar-inner {
@@ -90,7 +106,12 @@ a {
   gap: 56px;
   padding: 6px 16px;
   overflow-x: auto;
- 
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.sub-navbar-inner::-webkit-scrollbar {
+  display: none;
 }
 
 .sub-link {

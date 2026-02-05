@@ -110,10 +110,10 @@ const Dashboard = () => {
               <tbody>
                 {activities.map((item) => (
                   <tr key={item.id}>
-                    <td>{item.action}</td>
-                    <td>{item.user}</td>
-                    <td>{item.time}</td>
-                    <td>
+                    <td data-label="Action">{item.action}</td>
+                    <td data-label="User">{item.user}</td>
+                    <td data-label="Time">{item.time}</td>
+                    <td data-label="Status">
                       <span
                         className={`status-pill status-${item.status.toLowerCase()}`}
                       >
